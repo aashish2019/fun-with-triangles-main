@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Triangle Quiz</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Is Triangle?</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="hypoteneuse.html">Calculate Hypotenuse</a>
+        <a href="areaoftriangle.html">Area of Triangle</a>
+    </nav>
+    <h1 class="heading">Triangle Quiz</h1>
+    <h3 class="heading">
+        You will get 1 point for each right answer.
+    </h3>
+    <hr>
+
+    <form class="quiz-form">
+        <div class="question-container">
+            <p>
+                 Which of the following triangles have the same side lengths?
+            </p>
+            <label class="list-inline">
+                <input type="radio" name="question1" value="Scalene"/>Scalene
+            </label>
+            <label class="list-inline">
+                <input type="radio" name="question1" value="Isosceles"/> Isosceles
+            </label>
+            <label class="list-inline">
+                <input type="radio" name="question1" value="Equilateral"/> Equilateral
+            </label>
+        </div>
+                                
+        <div class="question-container">
+            <p>
+                If perimeter of a triangle is 100 cm and the length of two sides are 30 cm and 40 cm, the length of third side will be:
+            </p>
+            <label >
+                <input type="radio" name="question2" value="30"/> 30 cm
+            </label>
+            <label >
+                <input type="radio"  name="question2" value="40"/> 40 cm
+            </label>
+            <label >
+                <input type="radio"  name="question2" value="50"/> 50 cm
+            </label>
+        </div>
+
+        <div class="question-container">
+            <p>
+                A triangle in which one of the interior angles measures more than 90° is called?
+            </p>
+            <label >
+                <input type="radio" name="question3" value="obtuse"/> obtuse
+            </label>
+            <label >
+                <input type="radio"  name="question3" value="acute"/> acute
+            </label>
+            <label >
+                <input type="radio"  name="question3" value="right angled"/> right angled
+            </label>
+        </div>
+
+        <div class="question-container">
+            <p>
+                 If triangles ABC and DEF are similar and AB=4 cm, DE=6 cm, EF=9 cm and FD=12 cm, the perimeter of triangle is:
+            </p>
+            <label >
+                <input type="radio" name="question4" value="22"/> 22 cm
+            </label>
+            <label >
+                <input type="radio"  name="question4" value="18"/> 18 cm
+            </label>
+            <label 
+                <input type="radio"  name="question4" value="19"/> 19cm
+            </label>
+        </div>
+
+        
+        <div class="question-container">
+            <p>
+                The triangle in which all the sides are equal is called?
+            </p>
+            <label >
+                <input type="radio" name="question5" value="right triangle"/> right triangle
+            </label>
+            <label >
+                <input type="radio"  name="question5" value="equilateral triangle"/> equilateral triangle
+            </label>
+            <label >
+                <input type="radio"  name="question5" value="equiside triangle"/> equiside triangle
+            </label>
+        </div>
+    </form>
+    <button id="submit-form-btn">submit form</button>
+    <h2 id="output"></h2>
+    <script src="quiz.js"></script>
+</body>
+</html>
